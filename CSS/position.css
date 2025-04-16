@@ -1,0 +1,10 @@
+.pos-cen{
+    border: 5px solid coral;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    top: 75px;
+   
+}
+
