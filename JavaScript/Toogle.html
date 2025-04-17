@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <title>Image Toggler</title>
+
+    <style>
+        .image-container {
+            background-color: floralwhite;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="rounded" src="../assets/images/sea.jpg" alt="sea" height="300px" width="300px" id="SEA" name="IMG1">
+        <br><br>
+        <b><h4 id="NAME" style="color: turquoise;">Sea</h4></b>
+        <br><br>
+        <button type="button" class="btn btn-outline-success" onclick="toggle()">Toggle Image</button>
+
+    </div>
+
+    <script>
+        function toggle()
+        {
+            let name1=document.getElementById("SEA").name;
+            if(name1 == "IMG1"){
+
+            document.getElementById("SEA").src="../assets/images/sea1.jpg"
+            document.getElementById("NAME").innerHTML="SEA 2";
+            document.getElementById("SEA").name="IMG2";
+            }
+            else{
+                document.getElementById("SEA").src="../assets/images/sea.jpg"
+            document.getElementById("NAME").innerHTML="Sea";
+            document.getElementById("SEA").name="IMG1";
+            }
+            
+        }
+    </script>
+</body>
+</html>

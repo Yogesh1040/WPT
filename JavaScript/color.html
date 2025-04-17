@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <title>Cell-Color</title>
+
+    <style>
+        .color-container {
+            background-color: powderblue;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 15px 150px 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-container ">
+        <table class="table table-bordered mt-3" style="width: 300px; height: 300px; margin: auto; text-align:center; ">
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+            </tr>
+            <tr>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="6">6</td>
+            </tr>
+            <tr>
+                <td id="7">7</td>
+                <td id="8">8</td>
+                <td id="9">9</td>
+            </tr>
+
+
+        </table>
+        <br><br>
+        
+
+            <div style="text-align: center;">
+            <label for="cell" class="form-label">Select Cell Number : </label>
+            <select name="Cell" id="CELL" class="form-control">
+                <option value="">Choose Cell Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <br>
+            <label for="color" class="form-label">Select your color :</label>
+            <input type="color" id="COLOR" class="form-control form-control-color" style="margin: auto;">
+            <br>
+
+            <button type="button" class="btn btn-outline-dark mb-4 " onclick="change()">Set BackGround Color</button>
+        </div>
+
+    </div>
+
+    <script>
+        function change(){
+            let choice = document.getElementById("CELL").value;
+            let col=document.getElementById("COLOR").value;
+            switch(parseInt(choice))
+            {
+                case 1:
+                    {
+                        document.getElementById("1").style.backgroundColor=col;
+                        break;
+                    }
+                case 2:
+                    {
+                        document.getElementById("2").style.backgroundColor=col;
+                        break;
+                    }
+                case 3:
+                    {
+                        document.getElementById("3").style.backgroundColor=col;
+                        break;
+                    }
+                case 4:
+                    {
+                        document.getElementById("4").style.backgroundColor=col;
+                        break;
+                    }
+                case 5:
+                    {
+                        document.getElementById("5").style.backgroundColor=col;
+                        break;
+                    }
+                case 6:
+                    {
+                        document.getElementById("6").style.backgroundColor=col;
+                        break;
+                    }
+                case 7:
+                    {
+                        document.getElementById("7").style.backgroundColor=col;
+                        break;
+                    }
+                case 8:
+                    {
+                        document.getElementById("8").style.backgroundColor=col;
+                        break;
+                    }
+                case 9:
+                    {
+                        document.getElementById("9").style.backgroundColor=col;
+                        break;
+                    }
+            }
+
+        }
+    </script>
+</body>
+
+</html>
