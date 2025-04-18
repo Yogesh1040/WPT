@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <title>Replace</title>
+
+    <style>
+        .box-container {
+            background-color: floralwhite;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            width: 500px;
+            height: 150px;
+        }
+
+        body{
+            text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: cursive;
+    background-color: #c5adcd;
+        }
+        .ip{
+            width: auto;
+        }
+        .my-btn-outline-success{
+            --bs-btn-color: #c5312d;
+    --bs-btn-border-color: #2e1987;
+    --bs-btn-hover-color: #1c8db9;
+    --bs-btn-hover-bg: #9281c3;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Replace String</h3>
+
+        <div class="box-container">
+            <input type="text" style="height: 111px;" class="form-control" id="mtxt">
+
+        </div>
+    </div>
+
+    <label for="OLD" class="form-label">Old Text</label>
+    <input type="text" name="OLD" id="otxt" class="form-control ip">
+    <label for="NEW" class="form-label">New Text</label>
+    <input type="text" name="NEW" id="ntxt" class="form-control ip">
+
+    <br><br>
+    <button type="button" class="btn my-btn-outline-success" onclick="replaceText()">Replace</button>
+    <button type="button" class="btn my-btn-outline-success" onclick="replaceAllText()">Replace All</button>
+
+
+
+    <script>
+        function replaceText() {
+            let msg = document.getElementById("mtxt").value;
+            let oldt = document.getElementById("otxt").value;
+            let newt = document.getElementById("ntxt").value;
+
+            document.getElementById("mtxt").value= msg.replace(oldt, newt);
+
+
+        }
+
+        function replaceAllText() {
+            let msg = document.getElementById("mtxt").value;
+            let oldt = document.getElementById("otxt").value;
+            let newt = document.getElementById("ntxt").value;
+
+            document.getElementById("mtxt").value = msg.replaceAll(oldt, newt);
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
