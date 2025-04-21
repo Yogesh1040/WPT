@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "name": "TV",
+      "price": "45000",
+      "company": "LG",
+      "quantity": "50",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Keyboard",
+      "price": 3000,
+      "company": "Iball",
+      "quantity": 20
+    },
+    {
+      "name": "Mouse",
+      "price": "3000",
+      "company": "ZB",
+      "quantity": "50",
+      "id": "3"
+    }
+  ],
+  "Employee": [
+    {
+      "id": "101",
+      "name": "Yash",
+      "post": "Manager",
+      "salary": "500000",
+      "location": "Pune",
+      "mode": "Offline"
+    },
+    {
+      "id": "102",
+      "name": "Aditi",
+      "post": "Senior Developer",
+      "salary": "650000",
+      "location": "Mumbai",
+      "mode": "Hybrid"
+    },
+    {
+      "id": "104",
+      "name": "Sneha",
+      "post": "HR Executive",
+      "salary": "450000",
+      "location": "Delhi",
+      "mode": "Online"
+    },
+    {
+      "id": "105",
+      "name": "Pranav",
+      "post": "Data Analyst",
+      "salary": "600000",
+      "location": "Hyderabad",
+      "mode": "Hybrid"
+    },
+    {
+      "id": "106",
+      "name": "Ishika",
+      "post": "Product Manager",
+      "salary": "700000",
+      "location": "Chennai",
+      "mode": "Offline"
+    },
+    {
+      "name": "Rohan",
+      "post": "Team Lead",
+      "salary": "550000",
+      "location": "Bangalore",
+      "mode": "Offline",
+      "id": "103"
+    }
+  ]
+}
