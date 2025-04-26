@@ -1,0 +1,11 @@
+.box{
+    border:2px solid rebeccapurple;
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: transform 2s;
+}
+.box:hover{
+    transform:rotate3d(50deg,50deg,50deg);
+}

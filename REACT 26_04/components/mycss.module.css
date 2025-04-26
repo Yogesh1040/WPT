@@ -1,0 +1,11 @@
+.box{
+    border:2px solid red;
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: transform 3s;
+}
+.box:hover{
+    transform: rotate3d(-1,1,-1,7000deg);
+}
